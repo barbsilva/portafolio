@@ -1,0 +1,30 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+.me-color {
+  background-color: #fcd0c7;
+}
+
+.navbar-brand {
+  font-family: 'Titan One', cursive;
+  font-size: 40px;
+}
+
+.nav-item {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.line {
+  text-decoration: underline;
+  text-decoration-color: #fcd0c7;
+}
+
+header{
+  background-image: url('../img/photo-bg.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 30rem;
+  color: #ffffff;
+}
