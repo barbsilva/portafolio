@@ -20,11 +20,25 @@ body {
   text-decoration-color: #fcd0c7;
 }
 
-header{
+header {
   background-image: url('../img/photo-bg.jpeg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding-bottom: 30rem;
   color: #ffffff;
+}
+
+h4 {
+  color: #fcd0c7;
+}
+
+.bg-color {
+  background-color:
+}
+
+.linea1 {
+  width: 26%;
+  border-width: 3px;
+  border-color: #fcd0c7;
 }
