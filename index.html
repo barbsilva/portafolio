@@ -23,26 +23,28 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light me-color p-4">
-    <a class="navbar-brand" href="#">B.</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class=" nav-item active">
-          <a class="nav-link" href="#">Sobre Mí <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Experiencia</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Trabajos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contacto</a>
-        </li>
-      </ul>
+  <nav class="navbar navbar-expand-lg navbar-light me-color p-4 fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">B.</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class=" nav-item active">
+            <a class="nav-link" href="#sobre mi">Sobre Mí <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experiencia">Experiencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#trabajos">Trabajos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 
@@ -55,7 +57,9 @@
     </div>
   </header>
 
-  <section class="bg-color">
+  <section id="sobre mi" class="bg-color d-none d-sm-block pt-5">
+    <h2 class="text-center">UN POCO SOBRE MÍ</h2>
+    <hr class="linea1">
     <div class="text-center p-4">
       <h5 class="font-weight-bold pl-4 pr-4">Mi nombre es Bárbara, he perfilado mi carrera profesional como diseñadora en el área editorial y digital. Medios, Educación, Publicidad, Editoriales y Proyectos Privados han sido mi aprendizaje.
         En conjunto con esto me he desarrollado en proyectos colaborativos culturales, como libros, campañas digitales, fondos de cultura y música, ya que me interesa el trabajo en equipo.
@@ -75,7 +79,7 @@
             lobortis nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris ultricies sem eu massa pellentesque, id interdum nibh luctus. Nam ac orci id neque posuere aliquam.</p>
   </section>
 
-  <section class="text-center p-5">
+  <section id="experiencia" class="text-center p-5">
     <h2>MI EXPERIENCIA</h2>
     <hr class="linea1">
     <div class="container p-5">
@@ -93,7 +97,7 @@
   </section>
 
 
-  <section class="text-left container-fluid me-color p-5">
+  <section id="trabajos" class="text-left container-fluid me-color p-5">
     <h2 class="text-center">MIS TRABAJOS</h2>
     <hr class="linea2">
     <div class="card-deck p-3">
@@ -144,8 +148,6 @@
     </div>
   </section>
 
-
-
   <section>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
@@ -176,9 +178,7 @@
     </div>
   </section>
 
-
-
-  <section class"container">
+  <section id="contacto" class"container">
     <div class="text-center">
       <h2 class="pt-5">CONTACTO</h2>
       <div class="typeform-widget" data-url="https://barbarasilva665421.typeform.com/to/MECB01" style="width: 100%; height: 500px;"></div>
@@ -215,7 +215,6 @@
           <a class="text-dark pl-2" href="https://www.linkedin.com/in/b%C3%A1rbara-silva-mart%C3%ADnez-275885b9/"><i class="fab fa-linkedin-in fa-2x"></i></a>
         </div>
   </footer>
-
 
 
   <!--JQuery sin slim-->
