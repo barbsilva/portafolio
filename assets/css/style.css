@@ -29,7 +29,7 @@ header {
   color: #ffffff;
 }
 
-h4 {
+h5 {
   color: #fcd0c7;
 }
 
@@ -41,4 +41,14 @@ h4 {
   width: 26%;
   border-width: 3px;
   border-color: #fcd0c7;
+}
+
+.linea2 {
+  width: 26%;
+  border-width: 3px;
+  border-color: #ffffff;
+}
+
+.work{
+  color: #fcd0c7;
 }
