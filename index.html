@@ -23,16 +23,16 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light me-color p-4 fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light me-color p-3 fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">B.</a>
+      <a class="navbar-brand">B.</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
-          <li class=" nav-item active">
-            <a class="nav-link" href="#sobre mi">Sobre Mí <span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a class="nav-link" href="#sobremi">Sobre Mí</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#experiencia">Experiencia</a>
@@ -48,16 +48,15 @@
     </div>
   </nav>
 
-
-  <header class="text-center p-6">
-    <div class="container p-1">
+  <header class="text-center mt-5 pt-5">
+    <div class="container pt-5">
       <h1 class="display-3">YO SOY</h1>
       <hr class="linea1">
       <h2 class="display-4">BÁRBARA</h2>
     </div>
   </header>
 
-  <section id="sobre mi" class="bg-color d-none d-sm-block pt-5">
+  <section id="sobremi" class="bg-color d-none d-sm-block pt-5">
     <h2 class="text-center">UN POCO SOBRE MÍ</h2>
     <hr class="linea1">
     <div class="text-center p-4">
@@ -79,23 +78,73 @@
             lobortis nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris ultricies sem eu massa pellentesque, id interdum nibh luctus. Nam ac orci id neque posuere aliquam.</p>
   </section>
 
-  <section id="experiencia" class="text-center p-5">
-    <h2>MI EXPERIENCIA</h2>
-    <hr class="linea1">
-    <div class="container p-5">
-      <div class="row">
-        <div class="col-6">
-          <i class="fas fa-university fa-5x work"></i>
-          <h6 class="font-weight-bold text-dark">UNIVERSIDAD DE CHILE</h6>
-          <p>2018-2019</p>
+  <section id="experiencia" class="text-center">
+    <div class="container">
+      <h2>MI EXPERIENCIA</h2>
+      <hr class="linea1">
+      <div class="container p-5 text-center align-items-center">
+        <div class="row">
+          <div class="col-md-6 col-sm">
+            <i class="fas fa-university fa-5x work"></i>
+            <h5 class="font-weight-bold text-dark">UNIVERSIDAD DE CHILE</h5>
+            <p>2018-2019</p>
+            <button type="button" class="btn btn-outline-dark mb-5" data-toggle="modal" data-target="#uchile">
+              Ver más
+            </button>
+          </div>
+          <div class="col-md-6 col-sm">
+            <i class="fas fa-compact-disc fa-5x work"></i>
+            <h5 class="font-weight-bold text-dark">SELLO RECOLECTOR</h5>
+            <p>2017-2019</p>
+            <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#recolector">
+              Ver más
+            </button>
+          </div>
         </div>
-        <div class="col-6">
-          <i class="fas fa-compact-disc fa-5x work"></i>
-          <h6 class="font-weight-bold text-dark">SELLO RECOLECTOR</h6>
-          <p>2017-2019</p>
-        </div>
+      </div>
   </section>
 
+  <div class="modal fade" id="uchile" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Universidad de Chile</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Diseñadora Gráfica para la Escuela de Ingeniería y Ciencias de la Universidad de Chile.
+          A cargo del diseño digital y editorial de los departamentos internos y de la Subdirección de
+          Estudiantes.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="recolector" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sello Recolector</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          Diseñadora Gráfica y encargada de comunicaciones para Sello Recolector. A cargo
+          de diseño digital, editorial, redes sociales, asesorías comunicacionales y estrategias
+          de marketing para la industria de la música.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <section id="trabajos" class="text-left container-fluid me-color p-5">
     <h2 class="text-center">MIS TRABAJOS</h2>
@@ -123,7 +172,7 @@
         </div>
       </div>
     </div>
-    <div class="card-deck p-3">
+    <div class="card-deck pl-3 pr-3 pb-3">
       <div class="card">
         <img src="assets/img/suricata.png" class="card-img-top" alt="Suricata">
         <div class="card-body">
@@ -206,13 +255,13 @@
   <footer class="me-color p-4 text-center text-dark">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-6">
+        <div class="col">
           <h3 class="display-6 font-weight-bold">BÁRBARA</h3>
         </div>
-        <div class="col-6">
-          <a class="text-dark pl-2" href="http://www.instagram.com/Barb_Silva_estudio"><i class="fab fa-instagram fa-2x pl-3"></i></a>
-          <a class="text-dark pl-2" href="https://www.facebook.com/barbara.silvamartinez"><i class="fab fa-facebook fa-2x"></i></a>
-          <a class="text-dark pl-2" href="https://www.linkedin.com/in/b%C3%A1rbara-silva-mart%C3%ADnez-275885b9/"><i class="fab fa-linkedin-in fa-2x"></i></a>
+        <div class="col">
+          <a class="text-dark" href="http://www.instagram.com/Barb_Silva_estudio"><i class="fab fa-instagram fa-2x"></i></a>
+          <a class="text-dark" href="https://www.facebook.com/barbara.silvamartinez"><i class="fab fa-facebook fa-2x"></i></a>
+          <a class="text-dark" href="https://www.linkedin.com/in/b%C3%A1rbara-silva-mart%C3%ADnez-275885b9/"><i class="fab fa-linkedin-in fa-2x"></i></a>
         </div>
   </footer>
 
